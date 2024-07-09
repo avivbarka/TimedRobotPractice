@@ -36,7 +36,7 @@ public class Robot extends TimedRobot {
         } else if(driverJoystick.getRawButton(2)){
             motor.set(ControlMode.PercentOutput, -0.3);
         } else {
-            motor.setNeutralMode(NeutralMode.Brake);
+            motor.set(ControlMode.PercentOutput, 0);
         }
 
         
